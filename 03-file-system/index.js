@@ -19,7 +19,7 @@ async function writeReadJson(){
         data.carros.push("Sandero");
         console.log(data)
 
-        //sobrescreve o arquivo com o countedo modificado
+        //sobrescreve o arquivo com o conteudo modificado
         await fs.writeFile("teste.json", JSON.stringify(data));
     } catch(err){
         console.log(err);
